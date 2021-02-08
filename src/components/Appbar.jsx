@@ -4,10 +4,11 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const Appbar = () => {
     const [title, settitle] = useState('This is a React Component')
+
     return (
         <div>
             <center>
-                <h1 className="mt-4 badge badge-warning m-4 p-4">{title}</h1>
+                <span style={{fontSize: 30}} className="mt-4 badge badge-warning m-4 p-4">{title}</span>
                 <br/>
                 <button className="btn btn-primary btn-sm mt-4">Increment</button>
             </center>
