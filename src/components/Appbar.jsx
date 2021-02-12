@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const Appbar = () => {
     const [count, settitle] = useState(0)
-    const [tags, settags] = useState(['tag1', 'tags2', 'tags3'])
+    const [tags, settags] = useState(['tag1', 'tag2', 'tag3'])
 
     let classes = getBadgeClasses(count);
 
@@ -16,6 +16,11 @@ const Appbar = () => {
                 <span style={{fontSize: 30}} className={classes}>{count == 0 ? 'Zero' : count}</span>
                 <br/>
                 <button className="btn btn-primary btn-sm mt-4">Increment</button>
+                <br/>
+                <br/>
+                <ul>
+                    {tags.map((tag)=> <li>tag</li>)}
+                </ul>
             </center>
         </div>
     )
