@@ -14,3 +14,6 @@
 
 
 ## 5. Conditional Rendering
+
+
+## 6. Handling events

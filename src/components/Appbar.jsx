@@ -29,8 +29,8 @@ const Appbar = () => {
         <button className="btn btn-primary btn-sm mt-4">Increment</button>
         <br />
         <br />
-        {renderTags()}
       </center>
+      {renderTags()}
     </div>
   );
 };
