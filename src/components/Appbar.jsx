@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 const Appbar = () => {
     const [count, settitle] = useState(0)
+    const [tags, settags] = useState(['tag1', 'tags2', 'tags3'])
 
     let classes = getBadgeClasses(count);
 
