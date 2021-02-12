@@ -3,10 +3,9 @@ import 'bootstrap/dist/css/bootstrap.css'
 
 
 const Appbar = () => {
-    const [count, settitle] = useState(10)
+    const [count, settitle] = useState(0)
 
-    let classes = "mt-4 badge m-4 p-4";
-    classes += (count == 0) ? "badge-warning" : "badge-primary";
+    let classes = getBadgeClasses(count);
 
 
     
@@ -22,3 +21,9 @@ const Appbar = () => {
 }
 
 export default Appbar
+function getBadgeClasses(count) {
+    let classes = "mt-4 badge m-4 p-4 ";
+    classes += (count === 0) ? "badge-warning" : "badge-primary";
+    return classes;
+}
+
